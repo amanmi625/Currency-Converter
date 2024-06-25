@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background:linear-gradient(180deg,#0b07f2,#0fffd7);
+}
+::selection{
+  color: #fff;
+  background: #fe5881;
+}
+.wrapper{
+  width: 370px;
+  padding: 45px;
+  border-radius: 7px;
+  background: #ffff;
+  box-shadow: 7px 7px 20px rgb(32, 188, 66, 0.05);
+  transition-timing-function: ease-in;
+}
+.wrapper header{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form{
+  margin: 40px 0 20px 0;
+ 
+}
+
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  transition-timing-function: ease-in;
+}
+form input{
+  height: 51px;
+  font-size: 20px;
+  padding: 0 15px;
+  border: 1px solid #1c1717;
+}
+form input:focus{
+  padding: 0 15px;
+  border: 2px solid #1ce10e;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #08fd39;
+}
+.select-box img{
+  max-width: 30px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #0f0000;
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #151313;
+  border-radius: 8px;
+  border-right: 2px solid #08fd39;
+}
+.drop-list .icon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 20px;
+}
+form .exchange-rate{
+  font-smooth: 30px;
+  font-size: 25px;
+  margin: 20px 0 30px;
+  animation: linear;
+}
+form button{
+  height: 52px;
+  color:#fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #1928f5;
+  transition: 0.3s ease;
+}
+form button:hover{
+  background: #1eeb0f;
+}
